@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Route Map</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+ 
+	<link rel="stylesheet" type="text/css" href="styles/route.css">
+</head>
+<body>
+	<header>
+		<div class="container">
+      <div class="row">
+        <a href="index.html" class="col-xs-4">
+          <span class="glyphicon glyphicon-circle-arrow-left"></span>
+        </a>
+        <h3 class="col-xs-8">WayToDorm</h3>
+      </div>
+    </div>
+	<header>
+
+	<div id="map"></div>
+
+	<footer>
+		<div class="container text-center">
+			<span id="trackMode">Track Mode</span><br>
+			<label class="switch">
+				<input type="checkbox">
+			  <span class="slider"></span>
+		  </label><br>
+		  <span style="color: lightblue">*Track mode: automatically call your emergency contact and send pre-set text message when you seem to be in danger</span>
+		</div>
+	</footer>
+	
+
+	<script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 39.326731, lng: -76.619251},
+          scrollwheel: true,
+          zoom: 15
+        });
+      }
+    </script>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+  <!-- Gmaps JavaScript -->
+  <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ09Li_KNh7VrJtYtHKpzg_tW5zyfnbZ8&callback=initMap">
+      </script>
+</body>
+</html>
