@@ -1,7 +1,12 @@
 body{
-	background-color: black;
+	background-image: url("images/sky.jpeg");
 	color: white;
 	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body .modal{
+	color: black;
 }
 
 img{
@@ -20,5 +25,18 @@ h1{
 footer{
 	margin-bottom: 5vh;
 	font-size: 8em;
+	text-align: center;
 }
+ul li{
+	color: black;
+}
+navbar-brand{
+	color: black;	
+}
+#login{
+	padding: 8px;
+	margin: 5px 3px 0 3px;
+}
+
+
 
