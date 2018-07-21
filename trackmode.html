@@ -3,13 +3,12 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>WayToDorm</title>
+	<title></title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
  
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/trackmode.css">
 </head>
 <body>
 	<nav class="navbar navbar-inverse">
@@ -74,7 +73,7 @@
 				</form>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>		        
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
 		      </div>
 		    </div>
 		  </div>
@@ -113,27 +112,26 @@
 
 	</nav>
 
-	<div class="container text-center padded">
-		<img src="styles/images/logo.jpg" class="img-circle">
-		<h1>WayToDorm</h1>
-		<p><em>helps you travel safely back to your dorm at night</em></p>
-		<div id="viewRoute">
-			<a href="route_map.html" class="btn btn-primary btn-lg">View Safe Route</a>
+	<div class="container">
+    <div class="jumbotron">
+      <div class="text-center">
+        <span id="trackMode">Track Mode</span><br>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider"></span>
+        </label><br>
+        <h4 style="color: lightblue">When Track Mode is on, your selected contact will be called and a text message will be sent.</h4>
+      </div>
+    </div>
+
+    <div class="form-group">
+			<label for="message"><h2>Text Message :</h2></label>
+			<input class="form-control input-lg" id="message" value="I'm in danger. Please come and get me. Location:{{location}} --Automatically sent from WayToDorm"></input>
 		</div>
-	</div>
+  </div>
 
-	<footer>
-    <a href="set_contact.html" class="btn">
-      <span class="glyphicon glyphicon-cog"></span>
-      Set Emergency Contact
-    </a>
-	</footer>	
-
-	<!--jQuery CDN-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<!-- load js -->
-	<script type="text/javascript" src="scripts/main.js"></script>
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
